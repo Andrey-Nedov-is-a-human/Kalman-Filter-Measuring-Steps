@@ -8,6 +8,6 @@ Measuring the distance traveled from gyroscope and accelerometer data using Kalm
 На протяежении семестрового курса поэтапно изучался фильтр Калмана. Для практических работ использовались данные о шагах человека, 
 записанные с акселерометра и гироскопа прикреплённых к ноге человека.
 
-<img src="img1.jpg" width="600"/>
+<img src="/imgs/img1.jpg" width="600"/>
 
 # Задачи финального проекта
