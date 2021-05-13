@@ -4,7 +4,7 @@ Measuring the distance traveled from gyroscope and accelerometer data using Kalm
 *Разработчик/Developer*
 1. [Андрей Недов](github.com/Andrey-Nedov-is-a-human)
 
-<img src="/imgs/img1.jpg" width="600"/>
+<img src="/imgs/img1.jpg" width="700"/>
 
 Данный проект является финальным по курсу Estimation theory Ульсанского Университета, пройденного во время стажировки в Южной Корее. 
 На протяежении семестрового курса поэтапно изучался фильтр Калмана. Для практических работ использовались данные о шагах человека, 
