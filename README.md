@@ -1,5 +1,4 @@
-# Измерение пройденного расстояния по данным с гироскопа и акселерометра с помощью фильтра Калмана / 
-Measuring the distance traveled from gyroscope and accelerometer data using Kalman filter
+# Измерение пройденного расстояния по данным с гироскопа и акселерометра с помощью фильтра Калмана / Measuring the distance traveled from gyroscope and accelerometer data using Kalman filter
 
 *Разработчик/Developer*
 1. [Андрей Недов](github.com/Andrey-Nedov-is-a-human)
