@@ -3,7 +3,7 @@
 <img src="/imgs/img1.jpg" width="700"/>
 
 
-*Разработчик/Developer*
+*Разработчик/Developer* 
 1. [Андрей Недов](github.com/Andrey-Nedov-is-a-human)
 
 Данный проект является финальным по курсу Estimation theory Ульсанского Университета, пройденного мной во время стажировки в Южной Корее. 
