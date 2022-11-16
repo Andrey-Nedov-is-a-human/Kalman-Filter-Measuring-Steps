@@ -1,65 +1,65 @@
-# Измерение пройденного расстояния по данным с гироскопа и акселерометра с помощью фильтра Калмана / Measuring the distance traveled from gyroscope and accelerometer data using Kalman filter
+# Measuring the distance traveled from gyroscope and accelerometer data using Kalman filter
 
 <img src="/imgs/img1.jpg" width="700"/>
 
 
-*Разработчик/Developer* 
-1. [Андрей Недов](github.com/Andrey-Nedov-is-a-human)
+*Developer* 
+1. [Andrey Nedov](github.com/Andrey-Nedov)
 
-Данный проект является финальным по курсу Estimation theory Ульсанского Университета, пройденного мной во время стажировки в Южной Корее. 
-На протяежении семестрового курса поэтапно изучался фильтр Калмана. Для практических работ использовались данные о шагах человека, 
-записанные с акселерометра и гироскопа прикреплённых к ноге человека.
+This project is the final one in the Estimation theory course at Ulsan University, which I completed during my internship in South Korea.
+During the semester course, the Kalman filter was studied step by step. For practical work, we used data on human steps,
+recorded from an accelerometer and gyroscope attached to a person's leg.
 
-## Задачи финального проекта
+## Tasks of the final project
 
-Основной задачей курса является разработка алгоритма точного подсчёта пройденногого расстояния по данным с акселерометра и гироскопа, прикрепленных к подошве ботинка человека.
+The main objective of the course is to develop an algorithm for accurately calculating the distance traveled based on data from an accelerometer and a gyroscope attached to the sole of a person's boot.
 
-Задачами финального проекта является доработка алгоритма написанного в течение курса, и реализованного при помощи MathLab:
+The objectives of the final project are to refine the algorithm written during the course and implemented using MathLab:
 
-_Пока нога ототорвана от земли датчики накапливают ошибку. Мы полагаем что в течение каждого шага есть период когда нога находится на земле и её скорость относительно земли равна нулю. Таким образом мы можем сбрасывать накопленную ошибку во время каждого шага. Для реализации такого механизма нам нужно добавить к уже имеющимся в мартрице измерений проекта (H) скоростям по трём осям z координату._
+_While the leg is off the ground, the sensors accumulate an error. We assume that during each step there is a period when the foot is on the ground and its speed relative to the ground is zero. This way we can reset the accumulated error during each step. To implement such a mechanism, we need to add the z coordinate._
 
-1. Добавить z координату в набор измеряемых параметров фильтра Калмана
-2. Релаизовать алгортим детектирования состояния когда нога находится на земле
-3. Полученным алгоритмом измерить пройденное расстояние на трёх разных наборах данных (longwalking1.mat, longwalking2.mat, running.mat)
+1. Add z coordinate to the set of measured Kalman filter parameters
+2. Implement an algorithm for detecting the state when the foot is on the ground
+3. Using the obtained algorithm, measure the distance traveled on three different data sets (longwalking1.mat, longwalking2.mat, running.mat)
 
-## Ход работы
+## Progress
 
-_z_ - вектор измеряемых параметров
+_z_ - vector of measured parameters
 
-_H_ - матрица измерений 
+_H_ - measurement matrix
 
-_x_ - вектор истинного состояния параметров
+_x_ - parameter true state vector
 
-_v_ - гауссовский шум
+_v_ - Gaussian noise
 
 <img src="/imgs/img2.jpg" width="700"/>
 
-Проинтегрировав данные с акселерометра мы получаем следующие результаты
+After integrating the data from the accelerometer, we get the following results
 
 <img src="/imgs/img3.jpg" width="700"/>
 
-Данные с акселерометра и гироскопа
+Data from the accelerometer and gyroscope
 
 <img src="/imgs/img4.jpg" width="700"/>
 
-Определяем области нулевой скорости на акселерометре
+Determine the area of zero speed on the accelerometer
 
 <img src="/imgs/img5.jpg" width="700"/>
 
-Определяем области нулевой скорости на гироскопе
+Determine the area of zero speed on the gyroscope
 
 <img src="/imgs/img6.jpg" width="700"/>
 
-Делаем пересечение полученных областей
+We make the intersection of the obtained areas
 
 <img src="/imgs/img7.jpg" width="700"/>
 <img src="/imgs/img8.jpg" width="700"/>
 
-Основываясь на данных, полученых из фильтра Калмана, определяем центры областей для рассчёта векторов передвижения ноги и складываем полученные расстояния между шагами.
+Based on the data obtained from the Kalman filter, we determine the centers of the regions for calculating the leg movement vectors and add the resulting distances between steps.
 
 <img src="/imgs/img9.jpg" width="700"/>
 
-Получили хорошие результаты по трём наборам данных. Судя по графикам данных с датчиков ошибка с набора данных с бегом больше остальных, так как определение нулевой скорости на нём работает немного хуже. Тем не менее, результаты очень близки к реальным. Финальный проект был сдан на оценку отлично и стал последней работой на замечательном курсе.
+We got good results on three sets of data. Judging by the graphs of data from the sensors, the error from the data set with running is larger than the others, since the definition of zero speed on it works a little worse. However, the results are very close to reality. The final project was given an excellent mark and was the last work on a wonderful course.
 
-[PDF отчёт/PDF report](https://github.com/Andrey-Nedov-is-a-human/Kalman-Filter-Measuring-Steps/tree/main/imgs/Report.pdf)
+[PDF report](https://github.com/Andrey-Nedov/Kalman-Filter-Measuring-Steps/tree/main/imgs/Report.pdf)
 
