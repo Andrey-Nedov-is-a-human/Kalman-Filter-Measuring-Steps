@@ -4,7 +4,7 @@
 
 
 *Developer* 
-1. [Andrey Nedov](github.com/Andrey-Nedov)
+1. [Andrey Nedov](https://github.com/Andrey-Nedov)
 
 This project is the final one in the Estimation theory course at Ulsan University, which I completed during my internship in South Korea.
 During the semester course, the Kalman filter was studied step by step. For practical work, we used data on human steps,
