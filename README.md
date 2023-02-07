@@ -2,6 +2,7 @@
 
 <img src="/imgs/img1.jpg" width="700"/>
 
+*21.12.2019*
 
 *Developer* 
 1. [Andrey Nedov](https://github.com/Andrey-Nedov)
